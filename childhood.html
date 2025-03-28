@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CHILDHOOD</title>
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,150;1,150&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: url("backgrounds/background1.png") no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            background-color: #cae4ce;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8fc0a9;
+            padding: 12px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            gap: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a i {
+            margin-right: 5px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #cae4ce;
+        }
+
+        nav a:active, nav a:active i {
+        color: #276967;
+        }
+
+        .biography-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .biography-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 70px;
+        }
+
+        h1 {
+            font-family: Georgia;
+            font-size: 89px;
+            color: #8FC0A9;
+            text-shadow: 2px 1px 6px black;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 {
+            font-family: Georgia;
+            display: inline;
+            font-size: 35px;
+            color: #cae4ce;
+            margin: 20px;
+            text-shadow: 2px 1px 10px black;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #33443C;
+            text-underline-offset: 12px;
+        }
+
+        p {
+            text-align: justify; 
+            color: #000000;
+            font-weight: 20;
+            font-family: Verdana;
+            line-height: 1.6; 
+            font-size: 15px;
+            margin: 30px;
+            text-indent: 70px;
+
+        }
+
+        .background-text {
+            position: absolute;
+            font-family: Georgia;
+            font-size: 150px;
+            font-weight: bold;
+            color: #276967;
+            opacity: 20%;
+            white-space: nowrap;
+            letter-spacing: 1px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .nav-box {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 10px 30px 20px 0;
+            background-color: #8FC0A9;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .nav-box:hover {
+            background-color: #c8d5b9;
+        }
+
+        .nav-box:active {
+            background-color: #92ab82;
+        }
+
+        .boxtype {
+            width: 90%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #8fc0a9;
+            box-shadow: 0 0 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .image_container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .image-container {
+            box-sizing: border-box;
+            overflow: hidden;
+            padding: 5px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            border-radius: 16px; 
+        }
+
+        .image-container img {
+            border-radius: 16px;
+            width: 300px;
+            height: 300px; 
+            object-fit: cover;
+            margin-top: 10px;
+            display: block;
+        }
+
+
+       .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .button-container a {
+            background-color: #cae4ce;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house fa-sm"></i>HOME</a></li>
+            <li><a href="biomain.html"><i class="fa-solid fa-child-dress fa-sm"></i>BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html"><i class="fa-solid fa-heart fa-sm"></i>SKILLS</a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file fa-sm"></i>RESUME</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image fa-sm"></i> PHOTO GALLERY</a></li>
+            <li><a href="favorites.html"><i class="fa-solid fa-star fa-sm"></i>MEDIA</a></li>
+            <li><a href="goals.html"><i class="fa-solid fa-location-dot fa-sm"></i>GOALS</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="biography-section">
+        <div class="background-text">BIOGRAPHY</div>
+        <h1>BIOGRAPHY</h1>
+        <ul>
+            <li><a href="childhood.html" class="nav-box">CHILDHOOD</a></li>
+            <li><a href="teenage.html" class="nav-box">TEENAGE</a></li>
+            <li><a href="college.html" class="nav-box">COLLEGE</a></li>
+        </ul>
+    </div>
+
+
+    <div class="image_container">
+        <div class="image-container">
+            <a href="biopics/childhood1.jpg" target="winImage">
+                <img src="biopics/childhood1.jpg" alt="Childhood 1">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="biopics/childhood2.jpg" target="winImage">
+                <img src="biopics/childhood2.jpg" alt="Childhood2">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="biopics/childhood3.jpg" target="winImage">
+                <img src="biopics/childhood3.jpg" alt="Childhood 3">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="biopics/childhood4.jpg" target="winImage">
+                <img src="biopics/childhood4.jpg" alt="Childhood 4">
+            </a>
+        </div>
+    </div>   
+
+
+    <div class="boxtype">
+        <h2>Childhood Years</h2>
+        <p><b>Shanizza Harvey</b> loves to read books from the very beginning.<sup>1</sup> 
+            In her childhood years, around ten or eleven years old, she was already reading books of her sisters which are usually stories from Wattpad. Stories like <i>Diary ng Panget, Teen Clash, and She’s Dating The Gangster</i>; the kind of stories that feels cringe reading today but feels like home every time she stumbles into it.<sup>2</sup> 
+            She also likes to watch tagalog animes on TV in peaceful mornings. As a child, she wanted to be an astronaut or a ballerina because she was inspired by cartoons she’s watched.<sup>3</sup> 
+            Apart from that, she also likes to go outside and do absolutely everything; playing hide and seek and tumbang preso, be a mother on chinese garter, keeping stones that are small and smooth, collecting pogs and texts.<sup>4</sup>
+            At home, oh, she doesn’t like to be at home, like she thinks when going to school.<sup>5</sup>
+            Her mother is a bit strict and her sisters are much old than her.<sup>6</sup>
+            She’s the seventh of her sisters, you see.<sup>7</sup>
+            The sister before her has a nine years age gap between them.<sup>8</sup>
+            The only savior in their house is probably her Dad because he loves to spoil her that much and calls her ‘his favorite and beautiful daughter’.<sup>9</sup>
+            Her father even went with her to the mall, Ever, which is located in Quezon City.<sup>10</sup>
+            She loves that mall very much because of her father.<sup>11</sup>
+            She also loves to go to <i>TomsWorld</i> there and try all those arcade games<sup>12</sup>
+            And some other times, they will go to <i>Puregold</i> around Quezon City too, and buy pizza.<sup>13</sup>
+            She adores it every time her father praises her that she ate almost all the pizza, which is why she tries to eat everything whenever they go there.<sup>14</sup>
+            Like a typical child, she discovers she has fears too; she fears heights, falling off the stairs, spiders, and cockroaches.<sup>15</sup>
+            She had experienced falling from the stairs and her dad treated her Cornetto to calm her down.<sup>16</sup>
+            Honestly, if she could relive one memory in her childhood days, it’s most likely where she had fun with her Dad and his one box of pizza.<sup>17</sup>
+            It really was my most fond memories of her childhood.<sup>18</sup>
+            She’s a Daddy’s girl, after all.<sup>19</sup>
+            She thinks, <q>her childhood is probably one of her most colorful days.</q><sup>20</sup><br></p>
+
+
+            <div class="button-container">
+                <a href="biomain.html" class="nav-box">Go Top</a>
+            </div>
+   
+        </div>
+
+</body>
+</html>
